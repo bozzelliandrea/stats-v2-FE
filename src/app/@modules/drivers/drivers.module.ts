@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {DriverDetailComponent} from './driver-detail/driver-detail.component';
-import {DriversListComponent} from './drivers-list/drivers-list.component';
 import {DriversRoutingModule} from "./drivers-routing.module";
+import {DriversListComponent} from "./components/drivers-list/drivers-list.component";
+import {DriverDetailComponent} from "./components/driver-detail/driver-detail.component";
 
 
 @NgModule({
