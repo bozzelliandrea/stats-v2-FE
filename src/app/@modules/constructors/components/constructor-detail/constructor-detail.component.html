@@ -9,13 +9,13 @@
   <img class="team_flag" src="{{team?.flagUrl}}">
 
   <h3 class="constructor-detail__driver-name"
-      (click)="navigateToDriver(team.firstDriver.id)">{{team?.firstDriver.name}} {{team?.firstDriver.surname}}</h3>
+      (click)="navigateToDriver(team?.firstDriver?.id)">{{team?.firstDriver?.name}} {{team?.firstDriver?.surname}}</h3>
   <h3 class="constructor-detail__driver-name"
-      (click)="navigateToDriver(team.secondDriver.id)">{{team?.secondDriver.name}} {{team?.secondDriver.surname}}</h3>
+      (click)="navigateToDriver(team?.secondDriver?.id)">{{team?.secondDriver?.name}} {{team?.secondDriver?.surname}}</h3>
 
-  <img id="first-driver" src="{{team?.firstDriver.imageUrl}}">
+  <img id="first-driver" src="{{team?.firstDriver?.imageUrl}}">
 
-  <img id="second-driver" src="{{team?.secondDriver.imageUrl}}">
+  <img id="second-driver" src="{{team?.secondDriver?.imageUrl}}">
 
 
 </div>

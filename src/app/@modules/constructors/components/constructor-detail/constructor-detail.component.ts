@@ -15,7 +15,7 @@ import {DriverPipe} from "../../../../@shared/pipes/driver.pipe";
 export class ConstructorDetailComponent implements OnInit, OnDestroy {
 
   public isLoading: boolean = false;
-  public team: Constructor | undefined;
+  public team: any;
 
   private _subscription: Subscription = new Subscription();
 
@@ -54,7 +54,8 @@ export class ConstructorDetailComponent implements OnInit, OnDestroy {
   }
 
   public navigateToDriver(id: number): void {
-    this._router.navigate(['/drivers/' + id])
+    if (id)
+      this._router.navigate(['/drivers/' + id])
   }
 
 }
