@@ -1,7 +1,7 @@
 <ul class="app-navbar-container">
-  <li><a>Home</a></li>
-  <li><a>Drivers</a></li>
-  <li><a>Constructors</a></li>
-  <li><a>Schedule</a></li>
+  <li [routerLink]="['']"><a>Home</a></li>
+  <li [routerLink]="['drivers']"><a>Drivers</a></li>
+  <li [routerLink]="['constructors']"><a>Constructors</a></li>
+  <li [routerLink]="['races']"><a>Schedule</a></li>
 </ul>
 <router-outlet></router-outlet>

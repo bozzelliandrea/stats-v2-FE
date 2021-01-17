@@ -6,6 +6,12 @@
   margin-top: 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+}
+
 .card-container {
   background-color: $c-white;
   height: 550px;
