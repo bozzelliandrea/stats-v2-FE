@@ -1,0 +1,43 @@
+/*************************************\
+ *
+ *  PROJECT VARIABLES
+ *
+\*************************************/
+
+/*************************************\
+ *
+ *  COLOURS PALETTE (c-)
+ *
+\*************************************/
+
+$c-black:        #000000;
+$c-red:          #e10600;
+$c-dark-grey:    #8d8d8d;
+$c-light-grey:   #eeeeee;
+$c-white:        #ffffff;
+
+/*************************************\
+ *
+ *  BORDER COLOURS PALETTE (b-c)
+ *
+\*************************************/
+
+$bc-red: rgb(255, 6, 0);
+$bc-green: rgb(253, 253, 254);
+$bc-blue: rgb(0, 64, 255);
+
+/*************************************\
+ *
+ *  MIXINS (m-)
+ *
+\*************************************/
+
+@mixin m-border($color){
+  border-top: 10px;
+  border-right: 10px;
+  border-left: 0;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: $color;
+  border-radius: 20px;
+}

@@ -1,0 +1,43 @@
+@import "src/app/@shared/css/variables";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.card-container {
+  background-color: $c-white;
+  height: 550px;
+  width: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  border-style: solid;
+  border-color: #8c8a8a;
+  border-radius: 20px;
+
+  &:hover {
+    @include m-border($bc-red);
+    background-color: $c-light-grey;
+  }
+}
+
+.card-title {
+  margin-left: 50px;
+}
+
+.card-content-text {
+  font-style: italic;
+  margin: 10px;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 50%;
+  max-height: 50%;
+  margin-bottom: 15px;
+}

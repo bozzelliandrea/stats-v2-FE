@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/app/@shared/css/variables";
+
+
+@font-face {
+  font-family: "Regular";
+  src: local("Regular"), url("./assets/fonts/Formula1-Regular.ttf") format("truetype");
+}
+
+html, body{
+  font-family: "Regular";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: $c-dark-grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $c-black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $c-black;
+}

@@ -1,0 +1,29 @@
+@import "src/app/@shared/css/variables";
+
+.app-navbar-container {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $c-red;
+
+  li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  li a {
+
+    display: block;
+    color: $c-white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $c-black;
+    }
+  }
+}
