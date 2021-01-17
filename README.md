@@ -1,4 +1,4 @@
-# STATS-VS-BE
+# STATS-V2-FE
 
 This application needs the backend spring boot app present in the following link https://github.com/bozzaccio/stats-v2-BE
 
