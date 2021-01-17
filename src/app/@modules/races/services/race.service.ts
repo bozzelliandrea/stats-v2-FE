@@ -15,7 +15,7 @@ export class RaceService {
               private _requestService: RequestService) {
   }
 
-  public getAllConstructorsList(): Observable<Race[]> {
+  public getAllRaceList(): Observable<Race[]> {
 
     return this._http.get(`${this._requestService.baseUrl}/${ApiResourceEnum.RACES}`).pipe(
       map((res) => {
@@ -25,7 +25,7 @@ export class RaceService {
     );
   }
 
-  public getConstructorsList(id: string): Observable<Race> {
+  public getRaceDetail(id: string): Observable<Race> {
 
     return this._http.get(`${this._requestService.baseUrl}/${ApiResourceEnum.RACES}/${id}`).pipe(
       map((res) => {

@@ -1,0 +1,28 @@
+@import "src/app/@shared/css/variables";
+
+.card-race-container {
+  @include m-basic-card-container();
+}
+
+.card-content-container {
+  background-color: $c-white;
+  width: 90%;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+
+  h2 {
+    margin-left: 60px;
+  }
+
+  .driver-helmet {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+
+  .race-info__container {
+    position: absolute;
+    right: 400px;
+  }
+}

@@ -1,1 +1,20 @@
-<p>drivers-list works!</p>
+<h1>DRIVERS LIST</h1>
+
+<div class="card-driver-container">
+
+  <p *ngIf="isLoading">loading...</p>
+
+  <ng-container *ngFor="let driver of driverList">
+
+    <div class="card-driver" (click)="navigateToDriver(driver.id)">
+      <h2>{{driver?.name}} {{driver?.surname}}</h2>
+      <h2>{{driver?.number}}</h2>
+
+      <img class="driver_flag" src="{{driver.flagUrl}}">
+
+      <img class="driver-helmet" src="{{driver.helmetUrl}}">
+    </div>
+
+  </ng-container>
+
+</div>

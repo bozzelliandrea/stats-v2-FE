@@ -1,0 +1,41 @@
+@import "src/app/@shared/css/variables";
+
+
+.constructor-detail-container {
+
+  @include m-empty-detail-container();
+
+  .team_flag{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  #first-driver{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    max-width:350px;
+  }
+
+  #second-driver{
+    position: absolute;
+    bottom: 0;
+    left: 370px;
+    width:100%;
+    max-width:350px;
+  }
+
+}
+
+.constructor-detail__driver-name{
+  text-transform: uppercase;
+
+  &:hover{
+    color: $c-white;
+    cursor: pointer;
+  }
+}

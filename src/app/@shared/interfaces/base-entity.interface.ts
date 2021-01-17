@@ -6,5 +6,5 @@
 export interface BaseEntity{
   id: number;
   url: string;
-  number: number;
+  name: string;
 }

@@ -1,0 +1,33 @@
+@import "src/app/@shared/css/variables";
+
+
+.card-driver-container {
+  @include m-basic-card-container();
+}
+
+.card-driver {
+  @include m-basic-card();
+
+  .driver-helmet {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+
+  .driver_flag{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  h2{
+    margin-left: 20px;
+  }
+
+  &:hover{
+    @include m-slim-border($bc-blue);
+    cursor: pointer;
+  }
+}

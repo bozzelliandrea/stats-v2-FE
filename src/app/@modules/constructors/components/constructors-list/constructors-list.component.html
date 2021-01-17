@@ -1,1 +1,23 @@
-<p>constructors-list works!</p>
+<h1>CONSTRUCTORS LIST</h1>
+
+<div class="card-constructor-container">
+
+  <p *ngIf="isLoading">loading...</p>
+
+  <ng-container *ngFor="let team of teamList">
+  <div class="card-constructor" (click)="navigateToDetail(team.id)">
+    <h2>{{team.name}}</h2>
+
+    <div class="card-content-drivers">
+
+      <h5>{{team.firstDriver.name}} <b style="text-transform: uppercase">{{team.firstDriver.surname}}</b></h5>
+      <h5>{{team.secondDriver.name}} <b style="text-transform: uppercase">{{team.secondDriver.surname}}</b></h5>
+    </div>
+
+
+    <img class="team-car" src="{{team.imageUrl}}">
+
+    <img class="team_flag" src="{{team.flagUrl}}">
+  </div>
+  </ng-container>
+</div>

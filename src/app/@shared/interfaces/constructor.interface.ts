@@ -6,4 +6,6 @@ export interface Constructor extends BaseEntity {
   firstDriver: Driver;
   secondDriver: Driver;
   raceSeasonWin: number;
+  imageUrl: string;
+  flagUrl: string;
 }

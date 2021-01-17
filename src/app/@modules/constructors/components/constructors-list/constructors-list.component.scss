@@ -1,0 +1,34 @@
+@import "src/app/@shared/css/variables";
+
+
+.card-constructor-container {
+  @include m-basic-card-container();
+}
+
+.card-constructor {
+  @include m-basic-card();
+
+  .team-car {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+
+  .team_flag{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &:hover{
+    @include m-slim-border($bc-green);
+    cursor: pointer;
+  }
+}
+
+.card-content-drivers{
+  position: absolute;
+  left: 50px;
+}

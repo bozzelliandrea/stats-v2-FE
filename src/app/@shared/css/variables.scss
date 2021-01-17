@@ -23,7 +23,7 @@ $c-white:        #ffffff;
 \*************************************/
 
 $bc-red: rgb(255, 6, 0);
-$bc-green: rgb(253, 253, 254);
+$bc-green: rgb(125, 255, 177);
 $bc-blue: rgb(0, 64, 255);
 
 /*************************************\
@@ -40,4 +40,38 @@ $bc-blue: rgb(0, 64, 255);
   border-style: solid;
   border-color: $color;
   border-radius: 20px;
+}
+
+@mixin m-slim-border($color){
+  border-top: 5px;
+  border-right: 5px;
+  border-left: 0;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: $color;
+  border-radius: 10px;
+}
+
+@mixin m-basic-card-container(){
+  background-color: $c-dark-grey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+@mixin m-basic-card(){
+  background-color: $c-white;
+  width: 45%;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+}
+
+@mixin m-empty-detail-container(){
+  background-color: $c-dark-grey;
+  height: 500px;
+  width: 100%;
+  position: relative;
 }

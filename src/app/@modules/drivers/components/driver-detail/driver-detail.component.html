@@ -1,1 +1,15 @@
-<p>driver-detail works!</p>
+<div class="driver-detail-container">
+
+  <h1 class="driver-detail__name">{{driver?.name}} {{driver?.surname}}</h1>
+
+  <img class="driver-flag" src="{{driver?.flagUrl}}">
+
+  <img class="driver-image" src="{{driver?.imageUrl}}">
+
+  <div class="driver-data">
+    <h4>NUMBER: {{driver?.number}}</h4>
+    <h4>SEASON POLE POSITION: {{driver?.poleSeason}}</h4>
+    <h4>RACE SEASON WIN: {{driver?.raceSeasonWin}}</h4>
+    <h4><a href="{{driver?.url}}">Wikipedia URL</a></h4>
+  </div>
+</div>

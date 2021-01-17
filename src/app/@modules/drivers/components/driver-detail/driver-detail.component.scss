@@ -1,0 +1,48 @@
+@import "src/app/@shared/css/variables";
+
+.driver-detail-container {
+
+  @include m-empty-detail-container();
+
+  .driver-detail__name {
+
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .driver-flag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .driver-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .driver-data{
+    background-color: $c-light-grey;
+    bottom: 50px;
+    right: 90px;
+    float: right;
+    width: 50%;
+    height: 200px;
+    position: absolute;
+
+    h4{
+      margin-left: 50px;
+    }
+
+    a {
+      color: $c-black;
+      text-decoration: none;
+    }
+  }
+}

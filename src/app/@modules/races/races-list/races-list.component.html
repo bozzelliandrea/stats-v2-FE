@@ -1,1 +1,22 @@
-<p>races-list works!</p>
+<h1>RACE LIST</h1>
+
+<div class="card-race-container">
+
+  <p *ngIf="isLoading">loading...</p>
+
+  <ng-container *ngFor="let race of raceList">
+  <div class="card-content-container">
+
+    <h2>{{race.name}}</h2>
+
+    <div class="race-info__container">
+    <h5>POLE POSITION: {{race.poleDriver.number}} - {{race.poleDriver.name}} {{race.poleDriver.surname}}</h5>
+    <h5>CONSTRUCTOR WIN: {{race.winConstructor.name}}</h5>
+    <h5>DRIVER WIN: {{race.winDriver.number}} - {{race.winDriver.name}} {{race.winDriver.surname}}</h5>
+    </div>
+
+    <img class="driver-helmet" src="{{race?.winDriver?.helmetUrl}}">
+  </div>
+  </ng-container>
+
+</div>
