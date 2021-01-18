@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   api: {
-    protocol: 'http',
+    protocol: 'https',
     hostname: 'stats-project-backend.herokuapp.com',
     port: '',
     context: 'api'
