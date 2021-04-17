@@ -14,7 +14,3 @@ This application needs the backend spring boot app present in the following link
   
 Run the app with angular CLI using `ng serve`
 Open browser and navigate to `http://localhost:4200/` 
-
-<h2> DEPLOY URL </h2>
-
-https://bozzaccio.github.io/stats-v2-FE/stats-FE/dashboard
